@@ -1,0 +1,39 @@
+/* Hero.module.css */
+.hero {
+
+
+  background-color: red;
+  height: 80vh;
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  align-items: center;
+
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    flex-direction: row;
+    margin-top: 2.5rem;
+    gap: 0;
+  }
+}
+
+.textContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.heading4 {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+

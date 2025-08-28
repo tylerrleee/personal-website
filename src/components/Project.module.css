@@ -1,0 +1,88 @@
+/* Projects.module.css */
+.projects {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heading {
+  font-size: 3rem;
+  color: #10b981;
+  font-weight: bold;
+  text-align: center;
+}
+
+.projectCard {
+  padding: 2.5rem;
+  background-color: #a7f3d0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  width: 100%;
+}
+
+.projectCard:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  transform: scale(1.02);
+}
+
+@media (min-width: 1024px) {
+  .projectCard {
+    flex-direction: row;
+  }
+}
+
+.projectCardReverse {
+  composes: projectCard;
+}
+
+@media (min-width: 1024px) {
+  .projectCardReverse {
+    flex-direction: row-reverse;
+  }
+}
+
+.imageContainer {
+  width: 20rem;
+  border-radius: 0.25rem;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  border-radius: 0.25rem;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 1rem;
+  justify-content: center;
+  flex: 1;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.875rem;
+  text-align: center;
+}
+
+.titleLink:hover {
+  text-decoration: underline;
+}

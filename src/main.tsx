@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import '../style.css'; 
+import App from './App.tsx'
 
-ReactDOM.createRoot(document.getElementById('patternCanvas')!).render(
+ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
+    <App></App>
   </React.StrictMode>,
 );
